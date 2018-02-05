@@ -4,6 +4,8 @@ package com.imooc.sell.repository;
 import com.imooc.sell.dataObject.ProductCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {
+import java.util.List;
 
+public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {
+    List<ProductCategory> findByCategoryTypeIn(List<Integer> CategoryTypeList);
 }
