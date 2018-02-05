@@ -21,4 +21,15 @@ public class ProductCategoryRepositoryTest {
         ProductCategory category = repository.findOne(1);
         System.out.println(category.toString());
     }
+
+    @Test
+    public void saveTest(){
+        ProductCategory productCategory = repository.findOne(2);
+//        productCategory.setCategoryId(2);
+//        productCategory.setCategoryName("xx");
+        productCategory.setCategoryType(10);
+        repository.save(productCategory);
+    }
+
+
 }
