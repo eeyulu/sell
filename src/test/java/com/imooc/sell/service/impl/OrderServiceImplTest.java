@@ -3,6 +3,7 @@ package com.imooc.sell.service.impl;
 import com.imooc.sell.dataObject.OrderDetail;
 import com.imooc.sell.dto.OrderDTO;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,8 @@ public class OrderServiceImplTest {
 
         OrderDTO result = orderService.create(orderDTO);
         log.info("【创建订单】 result={}",result);
+
+        Assert.assertNotNull(result);
     }
 
     @Test
