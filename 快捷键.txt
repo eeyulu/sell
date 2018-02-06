@@ -1,0 +1,8 @@
+crl +shift + enter »»ÐÐ
+
+
+sell ÃüÁî
+
+ifconfig
+nginx -s reload
+vim /usr/local/nginx/conf/nginx.conf
